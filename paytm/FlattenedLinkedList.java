@@ -103,12 +103,12 @@ class FlattenedLinkedList
 
 		/* Let us create the following linked list 
 			5 -> 10 -> 19 -> 28 
-			| |	 |	 | 
-			V V	 V	 V 
-			7 20 22 35 
+			|    |	 |	 |
+			V    V	 V	 V
+			7   20   22  35
 			|		 |	 | 
 			V		 V	 V 
-			8		 50 40 
+			8		50  40
 			|			 | 
 			V			 V 
 			30			 45 
@@ -129,7 +129,7 @@ class FlattenedLinkedList
         L.head.right.right.right = L.push(L.head.right.right.right, 45);
         L.head.right.right.right = L.push(L.head.right.right.right, 40);
         L.head.right.right.right = L.push(L.head.right.right.right, 35);
-        L.head.right.right.right = L.push(L.head.right.right.right, 20);
+        L.head.right.right.right = L.push(L.head.right.right.right, 28);
 
         // flatten the list 
         L.head = L.flatten(L.head);
